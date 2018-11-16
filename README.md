@@ -1,49 +1,49 @@
 # drinkingBuddy
-SOKAL Hackathon - Say Food Team
+###### _Sponsored by_ 
+**SOKAL Hackathon** - _Team._ 
+**Say Food**
+###### 11/17/2018 - 11/18/2018, 690 Wilshire Pl, Los Angeles 90005
+###### https://bit.ly/2zbzZGp
 
-Main Feature
-- Track alcohol/liquor consumption
-- Find alcohol/liquor database/api and Crawl corresponding information
-- Perform verbal drunk test
-- Calculate alcohol blood level
-- Get Uber rides
-- Connect to Amazon to order & deliver alcohol
-- Find drinking buddies near you (SNS, other dating sites)
-- Suggest tips for less hangover: water intake, etc
+#### Features
+- [x] Track alcohol/liquor consumption
+- [x] Find alcohol/liquor database/api and Crawl corresponding information
+- [ ] Perform verbal drunk test
+- [ ] Calculate alcohol blood level
+- [ ] Get Uber rides
+- [ ] Connect to Amazon to order & deliver alcohol
+- [ ] Find drinking buddies near you (SNS, other dating sites)
+- [ ] Suggest tips for less hangover: water intake, etc
 
-
-Architecture
-SPA (single-page application) : https://en.wikipedia.org/wiki/Single-page_application
+#### Architecture
+>**SPA** (single-page application) https://en.wikipedia.org/wiki/Single-page_application
 
  ----------      ---------     ----------     ---------
-| Frontend |  - | Backend | - | Database | - | crawler |
+| Frontend |  - | Backend | - | Database | - | Crawler |
  ----------      ---------     ----------     ---------
-                     |              |
-                 ----------    ----------------
-                | OpenAPIs |  | Recommendation |
-                 ----------    ----------------
 
-Frontend
-- Javascript, HTML, CSS / Angular, Bootstrap4
-Backend
-- Nodejs / expression
-Database
-- AWS Aurora/DynamoDB
-- Crawler4j/Scrapy
-OpenAPIs
-- Google Map API/Custom Search
-- Twitter API
-- Uber API
-- Etc
+1. Frontend
+```  Javascript, HTML, CSS, AJAX, JSON / Angular, Bootstrap4  ```
+2. Backend
+```  Nodejs / expression  ```
+3. Database
+```  AWS Aurora/DynamoDB  ```
+4. Crawler
+```  Crawler4j/Scrapy  ```
+5. OpenAPIs
+```  Google Map API/Custom Search, Twitter API, Uber API, Etc  ```
 
-R&R
-| Role | Name |
-| --- | --- |
-| Project Lead | Heesung Lena Shin |
-| Frontend | Choonnoh Lee |
-| Frontend | Kweon Mo |
-| Backend | Chanshin Peter Park |
-| Backend | Jungmin Seo |
-| Database | Joseph Moon |
+#### R&R
+| Role | Name | Email |
+| --- | --- | --- |
+| Project Lead | Heesung Lena Shin | |
+| Frontend | Choonnoh Lee | |
+| Frontend | Kweon Mo | |
+| Backend | Chanshin Peter Park | chanship@usc.edu |
+| Backend | Jungmin Seo | |
+| Database | Joseph Moon | |
+
+#### Docs & Community
+1. 
 
 
