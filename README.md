@@ -37,7 +37,7 @@
 | Frontend | Choonnoh Lee | |
 | Frontend | Kweon Mo | |
 | Backend | Chanshin Peter Park | chanship@usc.edu |
-| Backend | Jungmin Seo | |
+| Backend | Jungmin Seo | suhjungm@usc.edu |
 | Database | Joseph Moon | |
 
 ## Docs & Community
