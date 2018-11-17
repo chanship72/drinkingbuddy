@@ -1,0 +1,31 @@
+{
+  "name": "drinkingbuddy",
+  "version": "0.0.1",
+  "description": "alcohol/liquor information provider",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanship/drinkingbuddy.git"
+  },
+  "author": "sayfood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanship/drinkingbuddy/issues"
+  },
+  "dependencies": {
+    "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.0",
+    "angular-material": "^1.1.10",
+    "angular-messages": "^1.7.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "https": "^1.0.0",
+    "moment": "^2.22.2",
+    "path": "^0.12.7"
+  },
+  "homepage": "https://github.com/chanship/drinkingbuddy#readme"
+}
