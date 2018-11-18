@@ -1,6 +1,6 @@
 # drinkingBuddy
-###### _Sponsored by_ 
-**SOKAL Hackathon(https://bit.ly/2zbzZGp)** - _Team._ 
+###### _Sponsored by_
+**SOKAL Hackathon(https://bit.ly/2zbzZGp)** - _Team._
 **Say Food**
 ###### 11/17/2018 - 11/18/2018, 690 Wilshire Pl, Los Angeles 90005
 
@@ -35,12 +35,11 @@
 | --- | --- | --- |
 | Project Manager | Heesung Lena Shin | |
 | Frontend | Choonnoh Lee | |
-| Frontend | Kweon Mo | |
+| Frontend | Young Jin Kim | |
+| Frontend | Kweon Mo Koo | kweonmok@usc.edu |
 | Backend | Chanshin Peter Park | chanship@usc.edu |
 | Backend | Jungmin Seo | suhjungm@usc.edu |
 | Database | Joseph Moon | |
 
 ## Docs & Community
-1. 
-
-
+1.
