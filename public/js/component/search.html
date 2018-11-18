@@ -170,7 +170,13 @@
             <b>Report</b>
             </div>
             <div class="card-body">
-               <img src="../images/calendar.png" style="width:100%">
+              <div class="cont">
+                 <img class="calendar" src="../images/calendar.png" style="width:100%">
+               <div class="popup-calendar hangover" ng-click="popup_description('hangover')"></div>
+               <div class="popup-calendar drunk" ng-click="popup_description('drunk')"></div>
+               <div class="popup-calendar getting-there" ng-click="popup_description('getting-there')"></div>
+               <div class="popup" style="display:none"><div class="popup-result" ng-click="close_popup()"></div></div>
+             </div>
                <div class="drinkingPals" style="
                  margin: 5px;
                ">
