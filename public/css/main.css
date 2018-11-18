@@ -21,3 +21,39 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
+
+.cont {
+	position: relative;
+    text-align: center;
+}
+
+.popup-calendar {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+}
+
+.hangover {
+	top: 66%;
+	left: 19%;
+}
+
+.drunk {
+	top: 34%;
+	left: 59%;
+}
+.getting-there {
+	top: 82%;
+	left: 32%;
+}
+
+.popup-result {
+	position: absolute;
+    border-radius: 25px;
+    background: #686868;
+    padding: 20px; 
+    top: 18%;
+    left: 18%;
+    width: 70%;
+    height: 70%; 
+}

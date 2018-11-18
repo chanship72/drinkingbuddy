@@ -55,5 +55,20 @@ drinkControllers.controller('drinkController',
         $scope.memoriesPanel = false;
         $scope.reportPanel = true; 
     };    
+    $scope.popup_description = function(state) {
+    	$('.popup-result').html('');
+    	if (state == 'hangover') {
+    		$('.popup-result').prepend('<img style="border-radius: 25px; display: block; width: 100%; height: 100%;" src="../images/drunk.png" />');
+    	}else if (state == 'drunk') {
+    		$('.popup-result').prepend('<img style="border-radius: 25px; display: block; width: 100%; height: 100%;" src="../images/drunk.png" />');
+    	}else {
+    		$('.popup-result').prepend('<img style="border-radius: 25px; display: block; width: 100%; height: 100%;" src="../images/alright.png" />');
+    	}
+        $('.popup').fadeIn();
+    }
+    $scope.close_popup = function() {
+        $('.popup').fadeOut();
+
+    }
 });
                             
