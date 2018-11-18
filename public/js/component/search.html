@@ -1,17 +1,175 @@
 <div ng-controller="drinkController" class="mainPanel">
-    <div class="container" name="inputPanel">
+    <div class="container" name="inputPanel" ng-show="inputPanel">
         <p>Hello world! <h1>{{name}}</h1>inputPanel</p>
+        <div class="searchForm border bg-light rounded px-2">
+            <form id="searchForm" class="needs-validation" name="searchForm" ng-submit="submit(searchForm)" novalidate>
+            <div class="row form-group">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
+                    <label class="col-form-label" for="pid" required>ID
+                </div>
+                <div class="col-sm-5 mt-2">
+                    <input class="form-control form-control-sm" type="text" name="pid" id="pid" ng-model="form.pid" placeholder="Peter">
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
+                    <label class="col-form-label" for="pname" required>Name
+                </div>
+                <div class="col-sm-5 mt-2">
+                    <input class="form-control form-control-sm" type="text" name="pname" id="pname" ng-model="form.pname" placeholder="Peter">
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
+                    <label class="col-form-label" for="pheight" required>Height
+                </div>
+                <div class="col-sm-5 mt-2">
+                    <input class="form-control form-control-sm" type="text" name="pheight" id="pheight" ng-model="form.pheight" placeholder="5">
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
+                    <label class="col-form-label" for="pweight" required>Weight
+                </div>
+                <div class="col-sm-5 mt-2">
+                    <input class="form-control form-control-sm" type="text" name="pweight" id="pweight" ng-model="form.pweight" placeholder="120">
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <button class="btn btn-primary btn-sm py-0" style="vertical-align: middle;display: inline-flex;" type="submit" id="submit">
+                            <p class="my-0 mt-1">Submit</p>
+                    </button>
+                    <button class="btn btn-light btn-sm clear border border-dark py-0" type="reset" style="vertical-align: middle;display: inline-flex;" ng-click="reset(form)">
+                            <p class="my-0 mt-1">Clear</p>
+                    </button>
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            </form>
+        </div>
     </div>
-    <div class="container" name="statusPanel">
-        <p>Hello world! <h1>{{name}}</h1>statusPanel</p>
+    <div class="" name="statusPanel" ng-show="statusPanel" style="height:100%;">
+        <div class="card text-center h-100">
+            <div class="card-header">
+                Status
+            </div>
+            <div class="card-body">
+<!--
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+-->
+               <div class="scrolling-wrapper" id="scroller">
+                    <div class="ssnp">
+                          <img src="../images/p1.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p2.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p3.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p4.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p5.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p6.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p7.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+                    <div class="ssnp">
+                          <img src="../images/p8.png" style="border-radius: 50%;width=60px;height:60px;">
+                    </div>
+               </div>
+               <div class="h-100">
+                    <div id="cont" data-pct="100">
+                        <div class="progress-wrapper">
+                            <div class="progress">
+                                <h6>{{spotifyArtist.popularity}}</h6>
+                            </div>
+                            <round-progress
+                                max="100"
+                                current="80"
+                                color="#45ce47"
+                                radius="20"
+                                stroke="3" 
+                                semi="false"
+                                rounded="true"
+                                clockwise="false"
+                                responsive="false"
+                                duration="800"
+                                animation="easeInOutQuart"
+                                animation-delay="0">
+                            </round-progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row fixed-bottom card-footer text-muted mx-0 my-0 px-0 py-0">
+                <div class="col-4 bg-dark text-white" ng-click="openStatusPanel()"><p class="font-weight-bold">Status</p></div>
+                <div class="col-4" ng-click="openSearchPanel()">Search</div>
+                <div class="col-4" ng-click="openSocialPanel()">Social</div>
+            </div>
+        </div>
     </div>
 
-    <div class="container" name="searchPanel">
-        <p>Hello world! <h1>{{name}}</h1>searchPanel</p>
+    <div class="" name="searchPanel" ng-show="searchPanel" style="height:100%;">
+        <div class="card text-center h-100">
+            <div class="card-header">
+            Search
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="row fixed-bottom card-footer text-muted mx-0 my-0 px-0 py-0">
+                <div class="col-4" ng-click="openStatusPanel()">Status</div>
+                <div class="col-4 bg-dark text-white" ng-click="openSearchPanel()"><p class="font-weight-bold">Search</p></div>
+                <div class="col-4" ng-click="openSocialPanel()">Social</div>
+            </div>
+        </div>
     </div>
 
-    <div class="container" name="socialPanel">
-        <p>Hello world! <h1>{{name}}</h1>socialPanel</p>
+    <div class="" name="socialPanel" ng-show="socialPanel" style="height:100%;">
+        <div class="card text-center h-100">
+            <div class="card-header">
+            Social
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="row fixed-bottom card-footer text-muted mx-0 my-0 px-0 py-0">
+                <div class="col-4" ng-click="openStatusPanel()">Status</div>
+                <div class="col-4" ng-click="openSearchPanel()">Search</div>
+                <div class="col-4 bg-dark text-white" ng-click="openSocialPanel()"><p class="font-weight-bold">Social</p></div>
+            </div>
+        </div>        
     </div>
-
 </div>
